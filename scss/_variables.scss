@@ -1,0 +1,37 @@
+:root {
+  // Brand Colors
+  --brand-green: #3f9e31;
+  --brand-green-op15: rgba(63, 158, 49, 0.15);
+  --brand-green-dark: #125b07;
+  --brand-blue: #2c0fa1;
+  --brand-blue-op50: rgba(44, 15, 161, 0.5);
+  --brand-yellow: #ffe100;
+
+  // Gradients
+  --gradient-brand: linear-gradient(
+    to right,
+    var(--brand-green),
+    var(--brand-blue)
+  );
+
+  // Gray Scale
+  --gray-01: #050110;
+  --gray-02: #0f0c1b;
+  --gray-03: #3f3d49;
+  --gray-04: #606060;
+  --gray-05: #9995a6;
+  --gray-06: #acb4bf;
+
+  // Neutral
+  --white: #f1f5fb;
+  --black: #1e1e1e;
+}
+
+// Mixins
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

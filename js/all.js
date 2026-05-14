@@ -1,0 +1,1 @@
+"use strict";var links=document.querySelectorAll(".link");links.forEach(function(e){var t,n,r=e.querySelector(".icon-link");r&&(t=r.dataset.default,n=r.dataset.hover,e.addEventListener("mouseenter",function(){r.src=n}),e.addEventListener("mouseleave",function(){r.src=t}))});

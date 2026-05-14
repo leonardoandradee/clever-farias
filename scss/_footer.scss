@@ -1,0 +1,102 @@
+footer {
+  background-color: var(--brand-blue);
+  padding-top: 8rem;
+  .container {
+    .top-footer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8rem;
+      .middle {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6.4rem;
+        .link-footer {
+          strong {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+            display: block;
+            margin-bottom: 1.6rem;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -0.4rem;
+              left: 0;
+              width: 3.2rem;
+              height: 0.2rem;
+              background-color: var(--brand-yellow);
+            }
+          }
+          ul {
+            li {
+              a {
+                font-size: 1.4rem;
+                font-weight: 300;
+                color: var(--white);
+                transition: 0.5s;
+                &:hover {
+                  color: var(--brand-yellow);
+                  transition: 0.5s;
+                }
+              }
+              &:not(:last-child) {
+                margin-bottom: 0.6rem;
+              }
+              p {
+                font-size: 1.4rem;
+                font-weight: 300;
+                color: var(--white);
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        width: 28rem;
+        p {
+          font-size: 1.4rem;
+          font-weight: 300;
+          color: var(--white);
+        }
+      }
+    }
+    .bottom-footer {
+      padding: 2.4rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 0.1rem solid var(--brand-green);
+      .left {
+        p {
+          font-size: 1.4rem;
+          font-weight: 300;
+          color: var(--white);
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3.6rem;
+        p {
+          font-size: 1.4rem;
+          font-weight: 300;
+          color: var(--white);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            margin-left: 1.6rem;
+            width: 0.2rem;
+            height: 1.8rem;
+            background-color: var(--brand-yellow);
+          }
+        }
+      }
+    }
+  }
+}
