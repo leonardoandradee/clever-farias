@@ -76,5 +76,24 @@ header {
         }
       }
     }
+    @media (max-width: 520px) {
+      .container {
+        .left {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 1220px) {
+    padding: 0 2rem;
+  }
+  @media (max-width: 520px) {
+    .container {
+      .center {
+        ul {
+          display: none;
+        }
+      }
+    }
   }
 }

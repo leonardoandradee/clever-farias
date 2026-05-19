@@ -42,6 +42,22 @@
       }
     }
   }
+  @media (max-width: 520px) {
+    .elements {
+      display: none;
+    }
+    .container {
+      padding-top: 14rem;
+      .left {
+        h1 {
+          font-size: 4.8rem;
+        }
+        h2 {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
 }
 
 .s-content {
@@ -101,34 +117,39 @@
           font-weight: 600;
         }
       }
-      .priority-table {
+      .table-wrapper {
         width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         margin-bottom: 4rem;
-        border-collapse: collapse;
-        th,
-        td {
-          border: 1px solid var(--brand-green);
-          padding: 1.2rem;
-          text-align: left;
-          vertical-align: top;
-          font-size: 1.6rem;
-          line-height: 1.4;
-        }
-        thead {
-          background: var(--brand-blue);
-          th {
-            color: var(--white);
-            font-weight: 600;
-            text-transform: uppercase;
+        .priority-table {
+          min-width: 60rem;
+          border-collapse: collapse;
+          th,
+          td {
+            border: 1px solid var(--brand-green);
+            padding: 1.2rem;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1.6rem;
+            line-height: 1.4;
           }
-        }
-        tbody {
-          background: var(--brand-green-op15);
-          color: var(--brand-green-dark);
-        }
-        td:first-child {
-          width: 30%;
-          white-space: nowrap;
+          thead {
+            background: var(--brand-blue);
+            th {
+              color: var(--white);
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+          tbody {
+            background: var(--brand-green-op15);
+            color: var(--brand-green-dark);
+          }
+          td:first-child {
+            width: 30%;
+            white-space: nowrap;
+          }
         }
       }
       .box-links {
@@ -187,6 +208,60 @@
           &::marker {
             color: var(--brand-green);
             font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 520px) {
+    padding: 0 4rem;
+    .container-blog {
+      .title {
+        h2 {
+          font-size: 2.8rem;
+          text-align: center;
+        }
+      }
+      .content {
+        h3 {
+          font-size: 2rem;
+          span {
+            font-size: 2rem;
+          }
+        }
+        h4 {
+          font-size: 1.8rem;
+        }
+        h5 {
+          font-size: 1.6rem;
+        }
+        p {
+          font-size: 1.6rem;
+          span {
+            font-size: 1.6rem;
+          }
+        }
+        ul {
+          li {
+            font-size: 1.6rem;
+            .list-link {
+              display: flex;
+              flex-direction: column;
+              .link {
+                flex span {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+        .table-wrapper {
+          .priority-table {
+            min-width: 700px;
+            th,
+            td {
+              font-size: 1.4rem;
+            }
           }
         }
       }

@@ -99,4 +99,40 @@ footer {
       }
     }
   }
+  @media (max-width: 520px) {
+    .top-footer {
+      display: flex;
+      align-items: center !important;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 3.2rem !important;
+      .middle {
+        margin-top: 3.2rem;
+        margin-left: -4rem;
+        display: flex;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        flex-direction: column;
+        gap: 3.2rem !important;
+      }
+      .right {
+        p {
+          margin-top: 4rem;
+          text-align: center;
+        }
+      }
+    }
+    .bottom-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .left {
+        p {
+          text-align: center;
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
 }
