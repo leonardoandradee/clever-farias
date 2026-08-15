@@ -1,7 +1,7 @@
 {
-  "name": "projeto-blizzard",
+  "name": "clever-farias",
   "version": "1.0.0",
-  "description": "Um projeto criado para o curso Codeboost",
+  "description": "Página oficial Delegado Clever Farias",
   "main": "index.js",
   "author": "Leonardo Andrade",
   "license": "MIT",
@@ -16,5 +16,6 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.58.3"
-  }
+  },
+  "repository": "https://github.com/leonardoandradee/clever-farias.git"
 }
